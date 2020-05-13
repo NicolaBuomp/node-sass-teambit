@@ -1,0 +1,80 @@
+/*************************************************
+                    Variables
+ *************************************************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #58402C;
+  font-family: "Noto Sans HK", sans-serif;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.d-flex {
+  display: flex;
+}
+
+li {
+  list-style: none;
+}
+
+#navbar {
+  height: 70px;
+}
+
+#navbar .d-flex {
+  justify-content: space-between;
+  align-items: center;
+}
+
+#navbar .list-nav li {
+  margin: 0 20px;
+}
+
+#navbar .list-nav a {
+  text-decoration: none;
+  color: #58402C;
+  font-weight: bold;
+  font-size: 14px;
+  transition: color 0.4s;
+}
+
+#navbar .list-nav a:hover {
+  color: #30488F;
+}
+
+#navbar .list-nav .btn-sign {
+  border: 1px solid #30488F;
+  border-radius: 7px;
+  transition: background-color 0.4s;
+}
+
+#navbar .list-nav .btn-sign a {
+  color: #30488F;
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+}
+
+#navbar .list-nav .btn-sign a img {
+  width: 18px;
+  margin: 0 5px;
+}
+
+#navbar .list-nav .btn-sign:hover {
+  background-color: #30488F;
+}
+
+#navbar .list-nav .btn-sign a:hover {
+  color: #fff;
+}
+
+

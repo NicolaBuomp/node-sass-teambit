@@ -1,0 +1,50 @@
+#navbar{
+    height: 70px;
+    .d-flex{
+        justify-content: space-between;
+        align-items: center;
+    }
+    .list-nav{
+        li{
+            margin: 0 20px;
+        }
+        a {
+            text-decoration: none;
+            color: $primary-word-color;
+            font-weight: bold;
+            font-size: 14px;
+            transition: color 0.4s;
+        }
+        a:hover{
+            color: $hover-nav-color;
+        }
+        .btn-sign{
+            border: 1px solid $big-btn-color;
+            border-radius: 7px;
+            transition: background-color 0.4s;
+            a{
+                color: $big-btn-color;
+                display: flex;
+                align-items: center;
+                padding: 8px 12px;
+                img{
+                    width: 18px;
+                    margin: 0 5px;
+                }
+            }
+        }
+        .btn-sign a{
+            
+        }
+        .btn-sign a img{
+            
+        }
+        .btn-sign:hover{
+            background-color: $hover-nav-color;
+        }
+        .btn-sign a:hover{
+            color: #fff;
+        }
+    }
+}
+    
