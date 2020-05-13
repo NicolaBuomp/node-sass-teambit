@@ -13,6 +13,10 @@ body {
   font-family: "Noto Sans HK", sans-serif;
 }
 
+main {
+  background-color: #FFE7D2;
+}
+
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -24,6 +28,18 @@ body {
 
 li {
   list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*************************************************
+                    NAVBAR
+ *************************************************/
+
+header {
+  height: 100vh;
 }
 
 #navbar {
@@ -39,12 +55,15 @@ li {
   margin: 0 20px;
 }
 
+#navbar .list-nav li:last-child {
+  margin-right: 0;
+}
+
 #navbar .list-nav a {
-  text-decoration: none;
   color: #58402C;
   font-weight: bold;
   font-size: 14px;
-  transition: color 0.4s;
+  transition: color 0.3s;
 }
 
 #navbar .list-nav a:hover {
@@ -64,6 +83,10 @@ li {
   padding: 8px 12px;
 }
 
+#navbar .list-nav .btn-sign a:hover {
+  color: #fff;
+}
+
 #navbar .list-nav .btn-sign a img {
   width: 18px;
   margin: 0 5px;
@@ -73,8 +96,69 @@ li {
   background-color: #30488F;
 }
 
-#navbar .list-nav .btn-sign a:hover {
+/*************************************************
+                    JUMBOTRON
+ *************************************************/
+
+#jumbotron {
+  margin: 100px 0;
+}
+
+#jumbotron .d-flex {
+  justify-content: space-between;
+  align-items: center;
+}
+
+#jumbotron .jumbo-text {
+  width: 50%;
+}
+
+#jumbotron .jumbo-text h1 {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+#jumbotron .jumbo-text .sub-title {
+  margin-bottom: 40px;
+  width: 80%;
+  font-size: 22px;
+}
+
+#jumbotron .jumbo-text .btn-jumbotron {
+  font-size: 14px;
+  background-color: #30488F;
   color: #fff;
+  border-radius: 7px;
+  padding: 6px 12px;
+  border: 1px solid #30488F;
+}
+
+#jumbotron .jumbo-text .btn-jumbotron img {
+  width: 18px;
+  margin-right: 5px;
+}
+
+#jumbotron .jumbo-text p {
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+#jumbotron .jumbo-text span {
+  color: #bdb5af;
+  font-size: 12px;
+  margin: 0 8px;
+}
+
+#jumbotron .jumbo-img {
+  width: 50%;
+}
+
+#jumbotron .jumbo-img img {
+  width: 100%;
+}
+
+main {
+  height: 100px;
 }
 
 

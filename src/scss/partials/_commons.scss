@@ -9,6 +9,10 @@ body{
     font-family: 'Noto Sans HK', sans-serif;
 }
 
+main{
+    background-color: $bgc-main;
+}
+
 .container{
     width: 1200px;
     margin: 0 auto;
@@ -20,4 +24,18 @@ body{
 
 li{
     list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+// bottoni principali
+@mixin big-buttom {
+    font-size: 14px;
+    background-color: $big-btn-color;
+    color: #fff;
+    border-radius: 7px;
+    padding: 6px 12px;
+    border: 1px solid $big-btn-color;
 }

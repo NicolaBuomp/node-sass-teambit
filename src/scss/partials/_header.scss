@@ -1,50 +1,118 @@
-#navbar{
+/*************************************************
+                    NAVBAR
+ *************************************************/
+header {
+    height: 100vh;
+}
+
+#navbar {
     height: 70px;
-    .d-flex{
+
+    .d-flex {
         justify-content: space-between;
         align-items: center;
     }
-    .list-nav{
-        li{
+
+    .list-nav {
+        li {
             margin: 0 20px;
+
+            &:last-child {
+                margin-right: 0;
+            }
         }
+
         a {
-            text-decoration: none;
             color: $primary-word-color;
             font-weight: bold;
             font-size: 14px;
-            transition: color 0.4s;
+            transition: color 0.3s;
+
+            &:hover {
+                color: $hover-nav-color;
+            }
         }
-        a:hover{
-            color: $hover-nav-color;
-        }
-        .btn-sign{
+
+        .btn-sign {
             border: 1px solid $big-btn-color;
             border-radius: 7px;
             transition: background-color 0.4s;
-            a{
+
+            a {
                 color: $big-btn-color;
                 display: flex;
                 align-items: center;
                 padding: 8px 12px;
-                img{
+
+                &:hover {
+                    color: #fff;
+                }
+
+                img {
                     width: 18px;
                     margin: 0 5px;
                 }
             }
-        }
-        .btn-sign a{
-            
-        }
-        .btn-sign a img{
-            
-        }
-        .btn-sign:hover{
-            background-color: $hover-nav-color;
-        }
-        .btn-sign a:hover{
-            color: #fff;
+
+            &:hover {
+                background-color: $hover-nav-color;
+            }
         }
     }
 }
-    
+
+/*************************************************
+                    JUMBOTRON
+ *************************************************/
+
+#jumbotron {
+    margin: 100px 0;
+
+    .d-flex {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .jumbo-text {
+        width: 50%;
+
+        h1 {
+            font-size: 50px;
+            margin-bottom: 30px;
+        }
+
+        .sub-title {
+            margin-bottom: 40px;
+            width: 80%;
+            font-size: 22px;
+        }
+
+        .btn-jumbotron {
+            @include big-buttom;
+
+            img {
+                width: 18px;
+                margin-right: 5px;
+            }
+        }
+
+        p {
+            font-size: 14px;
+            margin-top: 20px;
+        }
+
+        span {
+            color: #bdb5af;
+            font-size: 12px;
+            margin: 0 8px;
+        }
+    }
+
+    .jumbo-img {
+        width: 50%;
+
+        img {
+            width: 100%;
+        }
+    }
+}
