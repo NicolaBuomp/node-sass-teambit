@@ -1,12 +1,13 @@
 /*************************************************
                     NAVBAR
  *************************************************/
-header {
-    height: 100vh;
-}
-
-#navbar {
+ #navbar {
     height: 70px;
+
+    .container{
+        border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+
+    }
 
     .d-flex {
         justify-content: space-between;
@@ -57,62 +58,6 @@ header {
             &:hover {
                 background-color: $hover-nav-color;
             }
-        }
-    }
-}
-
-/*************************************************
-                    JUMBOTRON
- *************************************************/
-
-#jumbotron {
-    margin: 100px 0;
-
-    .d-flex {
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .jumbo-text {
-        width: 50%;
-
-        h1 {
-            font-size: 50px;
-            margin-bottom: 30px;
-        }
-
-        .sub-title {
-            margin-bottom: 40px;
-            width: 80%;
-            font-size: 22px;
-        }
-
-        .btn-jumbotron {
-            @include big-buttom;
-
-            img {
-                width: 18px;
-                margin-right: 5px;
-            }
-        }
-
-        p {
-            font-size: 14px;
-            margin-top: 20px;
-        }
-
-        span {
-            color: #bdb5af;
-            font-size: 12px;
-            margin: 0 8px;
-        }
-    }
-
-    .jumbo-img {
-        width: 50%;
-
-        img {
-            width: 100%;
         }
     }
 }

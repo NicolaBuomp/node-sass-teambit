@@ -13,12 +13,14 @@ body {
   font-family: "Noto Sans HK", sans-serif;
 }
 
-main {
-  background-color: #FFE7D2;
+.container {
+  width: 80%;
+  max-width: 1250px;
+  margin: 0 auto;
 }
 
-.container {
-  width: 1200px;
+.container-2 {
+  max-width: 1600px;
   margin: 0 auto;
 }
 
@@ -38,12 +40,12 @@ a {
                     NAVBAR
  *************************************************/
 
-header {
-  height: 100vh;
-}
-
 #navbar {
   height: 70px;
+}
+
+#navbar .container {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.5);
 }
 
 #navbar .d-flex {
@@ -101,7 +103,8 @@ header {
  *************************************************/
 
 #jumbotron {
-  margin: 100px 0;
+  margin-top: 100px;
+  margin-bottom: 150px;
 }
 
 #jumbotron .d-flex {
@@ -154,11 +157,183 @@ header {
 }
 
 #jumbotron .jumbo-img img {
+  min-width: 500px;
   width: 100%;
 }
 
-main {
-  height: 100px;
+#page-content {
+  background-color: #FFE7D2;
+}
+
+#page-content .container {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+}
+
+#page-content .container:last-child {
+  border: none;
+}
+
+#page-content .main-title {
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#page-content .main-title h2 {
+  margin: 80px;
+  text-align: center;
+  font-size: 26px;
+  width: 700px;
+}
+
+#page-content .main-title .main-box {
+  justify-content: center;
+}
+
+#page-content .main-title .main-box .card {
+  width: 275px;
+  height: 200px;
+  text-align: center;
+  margin: 0 15px;
+}
+
+#page-content .main-title .main-box .card .img-card img {
+  width: 150px;
+}
+
+#page-content .main-title .main-box .card p {
+  text-align: center;
+  font-size: 14px;
+}
+
+#page-content .main-title .rabbit {
+  margin: 60px 0;
+}
+
+#page-content .main-title .rabbit img {
+  max-width: 280px;
+}
+
+#page-content .main-title:last-child h2 {
+  margin: 20px 0 80px;
+}
+
+#page-content-two .section-block {
+  margin: 100px 0;
+}
+
+#page-content-two .section-block .block-img {
+  width: 50%;
+  margin-right: 40px;
+}
+
+#page-content-two .section-block .block-img img {
+  max-width: 770px;
+}
+
+#page-content-two .section-block .block-text,
+#page-content-two .section-block .block-text-left {
+  width: 50%;
+}
+
+#page-content-two .section-block .block-text h2,
+#page-content-two .section-block .block-text-left h2 {
+  width: 410px;
+  margin-bottom: 25px;
+}
+
+#page-content-two .section-block .block-text p,
+#page-content-two .section-block .block-text-left p {
+  width: 410px;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+#page-content-two .section-block .block-text a,
+#page-content-two .section-block .block-text-left a {
+  color: #30488F;
+  display: block;
+}
+
+#page-content-two .section-block .block-text img,
+#page-content-two .section-block .block-text-left img {
+  margin: 40px;
+  max-width: 270px;
+}
+
+#page-content-two .section-block .block-text-left {
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+#page-content-two .section-block a {
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#page-content-three {
+  padding: 30px 0;
+  background-color: #FFE7D2;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#page-content-three h2 {
+  font-size: 30px;
+  width: 400px;
+}
+
+#page-content-three .box-letter {
+  max-width: 628px;
+  margin: 35px 0;
+  padding: 20px 20px 20px 40px;
+  border: 1px solid #bdb5af;
+  border-radius: 7px;
+  background: #fff;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+#page-content-three .box-letter p {
+  margin-bottom: 30px;
+}
+
+#page-content-three .box-letter img {
+  margin-right: 10px;
+  width: 40px;
+}
+
+#page-content-three .box-letter ul {
+  display: inline-block;
+}
+
+#page-content-three .box-letter ul .name-founders {
+  color: #30488F;
+}
+
+#page-content-three .btn-jumbotron {
+  font-size: 14px;
+  background-color: #30488F;
+  color: #fff;
+  border-radius: 7px;
+  padding: 6px 12px;
+  border: 1px solid #30488F;
+}
+
+#page-content-three .btn-jumbotron img {
+  width: 18px;
+  margin-right: 5px;
+}
+
+#page-content-three .btn-jumbotron span {
+  margin: 0 10px;
+}
+
+#page-content-three a {
+  margin: 30px 0;
+  color: #58402C;
 }
 
 

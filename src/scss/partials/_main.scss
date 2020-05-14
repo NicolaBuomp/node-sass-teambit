@@ -1,3 +1,162 @@
-main{
-    height: 100px;
+/*************************************************
+                    JUMBOTRON
+ *************************************************/
+
+ #jumbotron {
+    margin-top: 100px;
+    margin-bottom: 150px;
+
+    .d-flex {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .jumbo-text {
+        width: 50%;
+
+        h1 {
+            font-size: 50px;
+            margin-bottom: 30px;
+        }
+
+        .sub-title {
+            margin-bottom: 40px;
+            width: 80%;
+            font-size: 22px;
+        }
+
+        .btn-jumbotron {
+            @include big-buttom;
+        }
+
+        p {
+            font-size: 14px;
+            margin-top: 20px;
+        }
+
+        span {
+            color: #bdb5af;
+            font-size: 12px;
+            margin: 0 8px;
+        }
+    }
+
+    .jumbo-img {
+        width: 50%;
+
+        img {
+            min-width: 500px;
+            width: 100%;
+        }
+    }
 }
+
+
+#page-content{
+    background-color: $bgc-main;
+
+    .container{
+        border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+    }
+    .container:last-child{
+        border: none;
+    }
+    .main-title{
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        h2{
+            margin: 80px;
+            text-align: center;
+            font-size: 26px;
+            width: 700px;
+        }
+        .main-box{
+            justify-content: center;
+    
+            .card{
+                width: 275px;
+                height: 200px;
+                text-align: center;
+                margin:0 15px;
+                .img-card{
+                    img{
+                        width: 150px;
+                    }
+                }
+                p{
+                    text-align: center;
+                    font-size: 14px;
+                }
+            }
+        }
+        .rabbit{
+            margin: 60px 0;
+            img{
+                max-width: 280px;
+            }
+        }
+    }
+    .main-title:last-child h2 {
+        margin: 20px 0 80px;
+    }
+}
+
+#page-content-two{
+    @include section-block;
+}
+
+#page-content-three{
+    padding: 30px 0;
+    background-color: $bgc-main;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h2{
+        font-size: 30px;
+        width: 400px;
+    }
+    .box-letter{
+        max-width: 628px;
+        margin: 35px 0;
+        padding: 20px 20px 20px 40px;
+        border: 1px solid #bdb5af;
+        border-radius: 7px;
+        background: #fff;
+        font-size: 14px;
+        line-height: 25px;
+        p{
+            margin-bottom: 30px;
+        }
+
+        img{
+            margin-right: 10px;
+            width: 40px;
+        }
+
+        ul{
+            display: inline-block;
+            .name-founders{
+                color: $big-btn-color;
+            }
+        }
+        
+    }
+
+    .btn-jumbotron {
+        @include big-buttom;
+
+        span{
+            margin: 0 10px;
+        }
+    }
+
+    a{
+        margin: 30px 0;
+        color: $primary-word-color;
+    }
+
+
+}
+

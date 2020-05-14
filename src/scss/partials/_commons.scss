@@ -9,12 +9,14 @@ body{
     font-family: 'Noto Sans HK', sans-serif;
 }
 
-main{
-    background-color: $bgc-main;
+.container{
+    width: 80%;
+    max-width: 1250px;
+    margin: 0 auto;
 }
 
-.container{
-    width: 1200px;
+.container-2{
+    max-width: 1600px;
     margin: 0 auto;
 }
 
@@ -38,4 +40,52 @@ a{
     border-radius: 7px;
     padding: 6px 12px;
     border: 1px solid $big-btn-color;
+    img {
+        width: 18px;
+        margin-right: 5px;
+    }
+}
+
+@mixin section-block {
+    .section-block{
+        margin: 100px 0;
+        .block-img{
+            width: 50%;
+            margin-right: 40px;
+            img{
+                max-width: 770px;
+            }
+        }
+        .block-text,
+        .block-text-left{
+            width: 50%;
+            h2{
+                width: 410px;
+                margin-bottom: 25px;
+            }
+            p{
+                width: 410px;
+                font-size: 20px;
+                margin-bottom: 40px;
+            }
+            a{
+                color: $big-btn-color;
+                display: block;
+            }
+
+            img{
+                margin: 40px;
+                max-width: 270px;
+            }
+        }
+        .block-text-left{
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: column;
+        }
+        a{
+            justify-content: flex-start;
+            align-items: center;
+        }
+    }
 }
