@@ -1,0 +1,17 @@
+#main-footer{
+    padding-top: 80px;
+    .footer-box{
+        width: 100%;
+    }
+    .text-footer{
+        align-items: center;
+        align-self: baseline;
+         width: 30%;
+         img{
+             height: 50px;
+             width: 50px;
+             margin: 20px;
+         }
+    }
+    @include list-footer;
+}
